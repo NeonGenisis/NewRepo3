@@ -6,13 +6,6 @@
 trigger:
 - master
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure for Students(9ed32f0e-8114-4e36-b532-aa43a5fbe014)'
-    appType: 'webApp'
-    appName: '7767PRG522SA2021'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
 pool:
   vmImage: ubuntu-latest
 
